@@ -1,0 +1,36 @@
+ <!-- team start  -->
+  <div class="team" >
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Our Team</p>
+            <h2>Our Website Desiners</h2>
+        </div>
+        <div class="row">
+        <% for(var i =0; i< memberName.length ; i++){ %> 
+        
+            
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="img/<%= memberPic[i] %>" alt="Image">
+                            <div class="team-social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text">
+                            <h2> <%= memberName[i]  %> </h2>
+                            <p><%= memberWork[i]  %> </p>
+                        </div>
+                    </div>
+                </div>
+            <% }%>     
+        
+     
+        </div>
+    </div>
+</div>
+
+
